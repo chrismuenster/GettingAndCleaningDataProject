@@ -1,5 +1,5 @@
-##setwd("\\\\sfberxx6514.eur.corp.vattenfall.com/cmuenster$/Documents/R/03 Getting and Cleaning Data/Assignment")
-
+runAnalysis <- function(){
+      
 # 0 # Download, unzip and read in data
       # download the data set to "Data" folder
       if(!file.exists("./Data")) {dir.create("./Data")}
@@ -63,3 +63,4 @@
       write.csv(tidyData, "tidyData.csv")
       write.table(tidyData, "tidyData.txt", row.name=FALSE)  
       
+}
