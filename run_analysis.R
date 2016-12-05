@@ -61,4 +61,5 @@
       
 # 6 # Write Data
       write.csv(tidyData, "tidyData.csv")
+      write.table(tidyData, "tidyData.txt", row.name=FALSE)  
       
