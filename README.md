@@ -80,7 +80,7 @@ Merges training/test sets, training/test activity labels and training/test subje
       subject_merge <- rbind(subject_test, subject_train)
 
 ###2 # 
-Extracts mean and standard deviation measurements from set, converts activities labels into factors and merge subject ids with activities and set (for mean and std only)
+Extracts mean and standard deviation measurements from set, converts activities labels into factors and merge subject ids with activities and set (for mean and std only, "meanFreq" variables are treated as mean variables)
       
       data_set <- cbind(subject_merge, as.factor(activity_merge[,1]), set_merge[, grepl("mean|std", features$V2)])
           
